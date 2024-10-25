@@ -1,7 +1,9 @@
 # 1 Introduction
 
 This is a description of the code used for the experiments described in the paper entitled Cohesiveness-aware Hierarchical Compressed Index for
-Community Search on Attributed Graphs. The **full version** of this paper is uploaded in this repository, however, reading on the website may have display issues, please download it before reading. 
+Community Search on Attributed Graphs. 
+
+The **full version** of this paper is uploaded in this repository, however, reading on the website may have display issues, please download it before reading. 
 
 We evaluated our Cohesiveness-aware Hierarchical Compressed Index (CHC-Index)
 by integrate to other methods published recently, e.g., ATC, VAC, SEA, rKACS
