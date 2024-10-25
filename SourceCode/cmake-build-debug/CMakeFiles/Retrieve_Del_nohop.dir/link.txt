@@ -1,1 +1,0 @@
-/usr/bin/c++ -fopenmp  -O3 -DNDEBUG "CMakeFiles/Retrieve_Del_nohop.dir/test_add_exp/CHCI-Del-Retrieve-nohop.cpp.o" -o Retrieve_Del_nohop 

@@ -1,1 +1,0 @@
-/usr/bin/c++ -fopenmp  -O3 -DNDEBUG "CMakeFiles/ATC_test.dir/tests_arg/ATC-Test.cpp.o" -o ATC_test 
