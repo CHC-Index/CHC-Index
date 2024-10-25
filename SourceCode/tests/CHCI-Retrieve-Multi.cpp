@@ -117,7 +117,7 @@ int main(int argc, char **argv) {
     if (rKACS_out) {
         CNNSG->gamma = 0;
     }
-      new_res = CNNSG->Anonymous_Search(query_id, r, coreness, &retrieve_time);
+      new_res = CNNSG->Retrieve(query_id, r, coreness, &retrieve_time);
     std::sort(new_res.begin(), new_res.end());
     retrieve_out(query_id, retrieve_time, new_res);
   }

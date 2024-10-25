@@ -31,6 +31,7 @@ INDEX_LOG_PATH=${INDEX_PREFIX}"/log/${IDX_ALGO}_L${BUILD_L}_R${DEGREE}_alp${ALPH
 BASE_INDEX_PATH=${INDEX_PATH}
 
 ############ RETRIEVE ##############
+L=1.2
 LAYER=15
 QUERY_PATH_PREFIX=${root}/..//datasets/query/${DATASET}/
 QUERY_PATH=${QUERY_PATH_PREFIX}/${DATASET}_queries_${LAYER}${COMBASE}
@@ -95,8 +96,8 @@ case $3 in
 retrieve)
     check_dir_and_make_if_absent_notquit ${RETRIEVE_RES_PREFIX}
 
-  ./Retrieve ${DATASET}  ${INDEX_PATH} ${graph}  ${vertex} ${edge} ${data} ${RETRIEVE_RES_PATH} ${RETRIEVE_RES_LOG_PATH} ${QUERY_PATH}\
-            ${r} ${LAYER} ${COMBASE} ${SMETHOD} ${METRIC} ${DEFAULT_THREAD_NUM} ${rKACS_out}
+  ./Retrieve_adjust ${DATASET}  ${INDEX_PATH} ${graph}  ${vertex} ${edge} ${data} ${RETRIEVE_RES_PATH} ${RETRIEVE_RES_LOG_PATH} ${QUERY_PATH}\
+            ${r} ${L} ${LAYER} ${COMBASE} ${SMETHOD} ${METRIC} ${DEFAULT_THREAD_NUM} ${rKACS_out}
   ;;
 VAC)
     check_dir_and_make_if_absent_notquit ${VAC_PREFIX}

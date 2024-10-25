@@ -87,8 +87,6 @@ namespace chci {
 
             std::mutex out_mutex;
             std::ofstream out(res_path);
-            CDIST avr_Dist = 0;
-            double avr_t = 0;
             int cnt = 0;
 
 #pragma omp parallel for schedule(dynamic, 1)
@@ -104,46 +102,24 @@ if (core_list[query_CNNSID] < coreness){
                     continue;
                 }
                 size_t time_us = 0;
-                auto t1 = std::chrono::high_resolution_clock::now();
                 int max_size = gamma * node_num_per_compo[coreness][compo_l[query_CNNSID][coreness]];
                 auto tmpset = ATC_Query_Truss_Loc_Size_Bounded_kd(query_CNNSID, coreness, d, &community_dist, max_size,
                                                                   &time_us);
-                auto t2 = std::chrono::high_resolution_clock::now();
                 if (tmpset.size() < coreness)
                     continue;
                 out_mutex.lock();
                 cnt++;
-                avr_t += time_us;
-                avr_Dist += community_dist;
                 out << std::to_string(i) << std::endl;
                 for (auto j: tmpset) {
                     out << std::to_string(cnns_2_ori[j]) << " ";
                 }
                 out << std::endl;
                 out << "Community Distance = " << community_dist << std::endl;
-//                out << "Runtime : " << std::chrono::duration_cast<std::chrono::duration<double,std::ratio<1,1000>>>(t2-t1).count() << " ms";
                 out << "Runtime : " << time_us << " mcrs";
                 out << std::endl;
 
-//                std::cout << "w/oIndex Current query ID: " << std::to_string(i) << " Community Distance = "
-//                          << community_dist << " size = " << tmpset.size() << std::endl;
-//                std::cout << "Runtime : "
-//                          << std::chrono::duration_cast<std::chrono::microseconds>(
-//                                  t2 - t1).count() << " mcrs";
-//                std::cout << "LocATC Runtime : " << time_us << " mcrs";
-//                std::cout << std::endl;
-
                 out_mutex.unlock();
             }
-
-            avr_Dist /= cnt;
-            avr_t /= cnt;
-            out << "Avr dist = " << avr_Dist << std::endl;
-            out << "Avr runtime = " << avr_t << std::endl;
-//            out << "Fail Num = " << fail_num << std::endl;
-            std::cout << "Avr dist = " << avr_Dist << std::endl;
-            std::cout << "Avr runtime = " << avr_t << std::endl;
-//            std::cout << "Fail Num = " << fail_num << std::endl;
 
             return 0;
         }
@@ -196,9 +172,6 @@ if (core_list[query_CNNSID] < coreness){
                 queryS.emplace_back(i.first);
             }
 
-            CDIST avr_Dist = 0;
-            double avr_t = 0;
-
             int cnt = 0;
             if (run_with > 0) {
                 std::ofstream out(res_path);
@@ -212,15 +185,12 @@ if (core_list[query_CNNSID] < coreness){
                     continue;
                 }
                     size_t time_us = 0;
-
                     auto tmpset = ATC_Query_withIndex_Truss_Bulk(query_CNNSID, coreness, d, &community_dist, i_m.second,
                                                                  &time_us);
                     if (tmpset.size()<coreness)
                         continue;
                 out_mutex.lock();
                     cnt++;
-                    avr_Dist += community_dist;
-                    avr_t += time_us;
                     out << std::to_string(i) << std::endl;
                     for (auto j: tmpset) {
                         out << std::to_string(cnns_2_ori[j]) << " ";
@@ -230,13 +200,6 @@ if (core_list[query_CNNSID] < coreness){
                     out << "Runtime : " << time_us << " mcrs" << std::endl;
                 out_mutex.unlock();
                 }
-            avr_Dist /= cnt;
-            avr_t /= cnt;
-
-            std::cout << "Avr dist = " << avr_Dist << std::endl;
-            std::cout << "Avr runtime = " << avr_t << std::endl;
-            out << "Avr dist = " << avr_Dist << std::endl;
-            out << "Avr runtime = " << avr_t << std::endl;
                 out.close();
             } 
             

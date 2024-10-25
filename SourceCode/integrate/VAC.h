@@ -42,14 +42,6 @@ namespace chci {
                         const std::string &vertex_path, const std::string &edge_path) {
             Load_Graph_bin(ds_t, HYB, truss, baseline, cnns_index_input, data_path, graph_path, vertex_path, edge_path);
         }
-//        void Load_Index(Dataset_Type ds_t, const std::string& cnns_index_input, const std::string& data_path, const std::string &graph_path,
-//                        const std::string &vertex_path, const std::string &edge_path, const std::string &valid_nodes_path) {
-//        //     if (valid_nodes_path != "null"){
-//        //     Load_Graph_bin_part(ds_t, HYB, truss, baseline, cnns_index_input, data_path, graph_path, vertex_path, edge_path, valid_nodes_path);
-//        // } else {
-//            Load_Graph_bin(ds_t, HYB, truss, baseline, cnns_index_input, data_path, graph_path, vertex_path, edge_path);
-//        // }
-//        }
 
         inline bool In_Same_Compo(CNODEID queryID, CCORE coreness, CNODEID cnns_ID) {
             return ((core_list[cnns_ID] >= coreness) &&

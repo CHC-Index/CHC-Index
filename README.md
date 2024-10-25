@@ -129,7 +129,7 @@ Specially, we use 2 meta paths for IMDB dataset, named IMDB_Movie and IMDB_Perso
 
 To prepare the datasets, download all the datasets from the link above,
 and put them to the root directory of the code. After this step, there should be
-two folders named "datasets" and "rKACS_ds" in the root directory.
+one folder named ./SourceCode/dataset.
 
 
 # 5 Usage
@@ -139,7 +139,7 @@ two folders named "datasets" and "rKACS_ds" in the root directory.
 
 To build the project successfully, OpenMP is required. And Snap library
 is required to build the project of rKACS algorithm.
-Run the script "build.sh" in the "shells" directory, the project
+Run the script "**build.sh**" in the "shells" directory, the project
 would be compiled.
 
 Note that if the Snap library could not be found, the build may failed, as 
@@ -260,6 +260,8 @@ change the parameter in the
 
 ## Section 5.4
 
+By adjusting *r* and *L* in *exp5_4.sh*, the result could be generated.
+
 ## Section 5.5
 
 By setting the parameter *RPPP* to *0* and *SMETHOD* to *baseline*
@@ -275,14 +277,7 @@ in the shell script in the index constructing step, we get the
 Index with all the optimizations;
 
 
-Then run similarly to *5.2* (take DBLP, VAC as an example):
-
-    ./exp5_5.sh DBLP VAC build
-    ./exp5_5.sh DBLP VAC retrieve
-    ./exp5_5.sh DBLP VAC run
-
-
-
+Then run similarly to *5.2* (take DBLP, SEA as an example):
 
 ## Section 5.6
 
@@ -292,20 +287,36 @@ the former index build steps.
 ## Section 5.7
 
 This experiment is more complicated.
-First, the base index of each graph should be constructed ($G_1$, run
+First, the base index of each graph should be constructed ($G->G_1->G_6$), run
 
-    ./exp5_7.sh <dataset> <algorithm> PartBuild
+    ./scalability.sh <DBLP/Twitch> <algorithm> PartBuild
 
+Then we add nodes to those base indices, run 
+
+    ./scalability.sh <DBLP/Twitch> <algorithm> AddNodes
+
+* For insertion, we retrieve nodes on the updated index and run community search algorithms by running
+
+      ./scalability.sh <DBLP/Twitch> <algorithm> retrieve Add
+      ./scalability.sh <DBLP/Twitch> <algorithm> run Add
+    and we retrieve nodes on the original index and run community search algorithms by running
+
+  ./scalability.sh <DBLP/Twitch> <algorithm> retrieve Base_Add
+  ./scalability.sh <DBLP/Twitch> <algorithm> run Base_Add 
+
+* For deletion, we retrieve nodes on the updated index and run community search algorithms by running
+
+        ./scalability.sh <DBLP/Twitch> <algorithm> retrieve Del
+        ./scalability.sh <DBLP/Twitch> <algorithm> run Del
+    and we retrieve nodes on the original index and run community search algorithms by running
+ 
+        ./scalability.sh <DBLP/Twitch> <algorithm> retrieve Base_Del
+        ./scalability.sh <DBLP/Twitch> <algorithm> run Base_Del
+ 
 ## Section 5.8
 
 The case study was running on VAC algorithm. By setting the *dataset* to
 *FB0*, *query_id* to *20*, *LAYER* to *4*, the experiment could be reproduced.
-
-Run:
-
-    ./run_algo.sh FB0 VAC build
-    ./run_algo.sh FB0 VAC retrieve
-    ./run_algo.sh FB0 VAC VAC
 
 ## Section 5.9
 

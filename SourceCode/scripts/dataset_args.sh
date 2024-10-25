@@ -26,6 +26,29 @@ DBLP() {
     ATC_gamma=0.50
 }
 
+
+IMDB(){
+  IMDB_root="${root}IMDB/";
+   graph="${IMDB_root}IMDBgraph.txt";
+   vertex="${IMDB_root}oldIMDBvertex.txt";
+   edge="${IMDB_root}IMDBedge.txt";
+   data="${IMDB_root}IMDBpersonattributes.txt";
+    DATASET=IMDB_Person
+    BUILD_L=48
+    ALPHA=1.2
+    DEGREE=26
+  RPPP=1
+  BETA=0.80
+  DATASET_TYPE=1
+    BUILD_THREAD_NUM=16
+  META_PATH="1,0,1;21,9"
+  SMETHOD=opt2
+   ATC_BEST=0.30
+      VAC_BEST=0.20
+      SEA_BEST=0.80
+      rKACS_BEST=0.70
+}
+
 IMDB_Person(){
   IMDB_root="${root}IMDB/";
    graph="${IMDB_root}IMDBgraph.txt";
