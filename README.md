@@ -12,7 +12,7 @@ on attributed homogeneous graphs and attributed heterogeneous graphs.
 
 NOTE: Due to the temporary inaccessibility of the anonymous repository, we are unable to upload the latest refactored code and README file. We will upload them as soon as the server is restored. In the meantime, our code is temporarily available at https://github.com/CHC-Index/CHC-Index (**with no author information revealed**).
 # 2 Requirements
-The experiments have been run on a Linux server with a 2.1 GHZ, 64 GB memory AMD-6272 Linux server.
+The experiments have been run on a Linux server with a 2.1 GHZ, 64 GB memory Linux server.
 Most of the algorithms are implemented with C++ and compiled by g++-12 except SEA algorithm.
 The jar package is provided by the author of *Scalable Community Search with Accuracy Guarantee on Attributed Graphs*.
 
