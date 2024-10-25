@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CNNS"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Build">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/Build" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Build"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Build/fast">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/Build" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Build/fast"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Retrieve">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/Retrieve" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Retrieve"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Retrieve/fast">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/Retrieve" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Retrieve/fast"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ATC_test">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/ATC_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 ATC_test"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ATC_test/fast">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/ATC_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 ATC_test/fast"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="VAC_test">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/VAC_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 VAC_test"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="VAC_test/fast">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/VAC_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 VAC_test/fast"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Retrieve_Multi">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/Retrieve_Multi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Retrieve_Multi"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Retrieve_Multi/fast">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/Retrieve_Multi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Retrieve_Multi/fast"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Retrieve_Multi_change_num">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/Retrieve_Multi_change_num" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Retrieve_Multi_change_num"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Retrieve_Multi_change_num/fast">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/Retrieve_Multi_change_num" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Retrieve_Multi_change_num/fast"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Retrieve_Del">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/Retrieve_Del" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Retrieve_Del"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Retrieve_Del/fast">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/Retrieve_Del" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Retrieve_Del/fast"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Retrieve_Del_nohop">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/Retrieve_Del_nohop" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Retrieve_Del_nohop"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Retrieve_Del_nohop/fast">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/Retrieve_Del_nohop" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Retrieve_Del_nohop/fast"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Prune">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/Prune" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Prune"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Prune/fast">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/Prune" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Prune/fast"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Part_Build">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/Part_Build" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Part_Build"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Part_Build/fast">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/Part_Build" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Part_Build/fast"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Add_Nodes">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/Add_Nodes" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Add_Nodes"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Add_Nodes/fast">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/Add_Nodes" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Add_Nodes/fast"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Add_Nodes_Multi">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/Add_Nodes_Multi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Add_Nodes_Multi"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Add_Nodes_Multi/fast">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/Add_Nodes_Multi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Add_Nodes_Multi/fast"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rKACS_Query">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/rKACS_Query" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 rKACS_Query"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rKACS_Query/fast">
+				<Option output="/tmp/tmp.5TJTqsORwm/cmake-build-debug/rKACS_Query" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./include"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./integrate"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"/>
+					<Add directory="/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 rKACS_Query/fast"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/tmp/tmp.5TJTqsORwm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/tmp/tmp.5TJTqsORwm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/integrate/rKACS/src/Common.cpp">
+			<Option target="rKACS_Query"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/integrate/rKACS/src/Common.h">
+			<Option target="rKACS_Query"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/integrate/rKACS/src/Def.cpp">
+			<Option target="rKACS_Query"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/integrate/rKACS/src/Def.h">
+			<Option target="rKACS_Query"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/integrate/rKACS/src/DynamicClique.cpp">
+			<Option target="rKACS_Query"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/integrate/rKACS/src/DynamicClique.h">
+			<Option target="rKACS_Query"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/integrate/rKACS/src/DynamicTCTruss.cpp">
+			<Option target="rKACS_Query"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/integrate/rKACS/src/DynamicTCTruss.h">
+			<Option target="rKACS_Query"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/integrate/rKACS/src/KRCore.cpp">
+			<Option target="rKACS_Query"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/integrate/rKACS/src/KRCore.h">
+			<Option target="rKACS_Query"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/integrate/rKACS/src/MaxMinWeightTruss.cpp">
+			<Option target="rKACS_Query"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/integrate/rKACS/src/MaxMinWeightTruss.h">
+			<Option target="rKACS_Query"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/integrate/rKACS/src/TrussComputation.cpp">
+			<Option target="rKACS_Query"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/integrate/rKACS/src/TrussComputation.h">
+			<Option target="rKACS_Query"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/integrate/rKACS/src/main.cpp">
+			<Option target="rKACS_Query"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/test_add_exp/CHCI-Del-Retrieve-Multi.cpp">
+			<Option target="Retrieve_Del"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/test_add_exp/CHCI-Del-Retrieve-nohop.cpp">
+			<Option target="Retrieve_Del_nohop"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/test_add_exp/CHCI-Part_Add.cpp">
+			<Option target="Add_Nodes"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/test_add_exp/CHCI-Part_Add_multi.cpp">
+			<Option target="Add_Nodes_Multi"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/test_add_exp/CHCI-Part_Build.cpp">
+			<Option target="Part_Build"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/test_add_exp/del_dataset.cpp">
+			<Option target="Prune"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/tests_arg/ATC-Test.cpp">
+			<Option target="ATC_test"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/tests_arg/CHCI-Build.cpp">
+			<Option target="Build"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/tests_arg/CHCI-Retrieve-Multi.cpp">
+			<Option target="Retrieve_Multi"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/tests_arg/CHCI-Retrieve-Multi_changeNodeNum.cpp">
+			<Option target="Retrieve_Multi_change_num"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/tests_arg/CHCI-Retrieve.cpp">
+			<Option target="Retrieve"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/tests_arg/VAC-Test.cpp">
+			<Option target="VAC_test"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.5TJTqsORwm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

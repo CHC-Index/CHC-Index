@@ -1,0 +1,132 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CNNS",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ATC_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ATC_test-Release-0d5425badaccc9d86e66.json",
+					"name" : "ATC_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Add_Nodes::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Add_Nodes-Release-da700a19473dfba4319f.json",
+					"name" : "Add_Nodes",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Build::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Build-Release-2b6f5ad9cee37f54a2b7.json",
+					"name" : "Build",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Part_Build::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Part_Build-Release-d2e5f1a303c5fd2e2569.json",
+					"name" : "Part_Build",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Retrieve::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Retrieve-Release-475946bbcc921e007bb5.json",
+					"name" : "Retrieve",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Retrieve_Del::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Retrieve_Del-Release-18369203bd8c1484560d.json",
+					"name" : "Retrieve_Del",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Retrieve_Multi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Retrieve_Multi-Release-f7bbf95e5a112aab7eda.json",
+					"name" : "Retrieve_Multi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "VAC_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-VAC_test-Release-7de2eb409b36d80721ea.json",
+					"name" : "VAC_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rKACS_Query::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rKACS_Query-Release-2f3e814d25cd98bee4a6.json",
+					"name" : "rKACS_Query",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/HDD1/pzy22/CNNS-Experiment/codes_setup/clion_new/cmake-build-debug",
+		"source" : "/mnt/HDD1/pzy22/CNNS-Experiment/codes_setup/clion_new"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

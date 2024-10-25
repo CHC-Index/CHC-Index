@@ -1,0 +1,168 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CNNS",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ATC_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ATC_test-Release-f44575f6ed703e82a04e.json",
+					"name" : "ATC_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Add_Nodes::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Add_Nodes-Release-4a427d6a7276d25b44c0.json",
+					"name" : "Add_Nodes",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Add_Nodes_Multi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Add_Nodes_Multi-Release-90ed6c7f8ece7732b0f8.json",
+					"name" : "Add_Nodes_Multi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Build::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Build-Release-170562f76554faf6b7aa.json",
+					"name" : "Build",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Part_Build::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Part_Build-Release-7cb96c9420682016984e.json",
+					"name" : "Part_Build",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Prune::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Prune-Release-022aa7164d0239bf4d4a.json",
+					"name" : "Prune",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Retrieve::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Retrieve-Release-edd25369fa3d8f856242.json",
+					"name" : "Retrieve",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Retrieve_Del::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Retrieve_Del-Release-af1082165a97266cbd46.json",
+					"name" : "Retrieve_Del",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Retrieve_Del_nohop::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Retrieve_Del_nohop-Release-a88e6418ce3eadef0fbf.json",
+					"name" : "Retrieve_Del_nohop",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Retrieve_Multi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Retrieve_Multi-Release-b4254cfba24021ad6a7d.json",
+					"name" : "Retrieve_Multi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Retrieve_Multi_change_num::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Retrieve_Multi_change_num-Release-957424451787193400ba.json",
+					"name" : "Retrieve_Multi_change_num",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "VAC_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-VAC_test-Release-6d8cf1118caacca98f9f.json",
+					"name" : "VAC_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rKACS_Query::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rKACS_Query-Release-92dc78c5aea58e5c6cad.json",
+					"name" : "rKACS_Query",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/tmp/tmp.5TJTqsORwm/cmake-build-debug",
+		"source" : "/tmp/tmp.5TJTqsORwm"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

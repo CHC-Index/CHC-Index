@@ -1,0 +1,161 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Add_Nodes"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 82,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 65,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 66,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 67,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 68,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 101,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-fopenmp  -O3 -DNDEBUG -std=gnu++14 -fdiagnostics-color=always"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/tmp/tmp.5TJTqsORwm/./include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/tmp/tmp.5TJTqsORwm/./integrate"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/tmp/tmp.5TJTqsORwm/./3rdPartyLib"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/tmp/tmp.5TJTqsORwm/./3rdPartyLib/parallel_hashmap"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/glib-core"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/tmp/tmp.5TJTqsORwm/3rdPartyLib/snap/snap-core"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/tmp/tmp.5TJTqsORwm/3rdPartyLib/parallel-hashmap/parallel_hashmap"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "14"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "Add_Nodes::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-fopenmp  -O3 -DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "Add_Nodes",
+	"nameOnDisk" : "Add_Nodes",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "test_add_exp/CHCI-Part_Add.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}
