@@ -1,0 +1,2 @@
+*.json
+/SourceCode/cmake-build-debug/*

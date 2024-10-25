@@ -4,7 +4,7 @@
 using namespace chci;
 using namespace std;
 int main(int argc, char** argv){
-    std::cout << "Begin Formal Test, Stage Build Index!\n";
+    std::cout << "Begin Building CHC-Index!\n";
 
     int cnt = 1;
     std::string dataset_type = argv[cnt++];

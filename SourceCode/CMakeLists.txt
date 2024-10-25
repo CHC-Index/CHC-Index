@@ -25,7 +25,6 @@ add_executable(Retrieve tests/CHCI-Retrieve-Multi.cpp)
 add_executable(ATC_test tests/ATC-Test.cpp)
 add_executable(VAC_test tests/VAC-Test.cpp)
 
-add_executable(Retrieve_Multi tests/CHCI-Retrieve-Multi.cpp)
 add_executable(Retrieve_Del tests/CHCI-Del-Retrieve-Multi.cpp)
 add_executable(Part_Build tests/CHCI-Part_Build.cpp)
 add_executable(Add_Nodes tests/CHCI-Part_Add.cpp)

@@ -67,7 +67,7 @@ namespace chci {
 
         virtual void Metric_Interface(__Metric) = 0;
 
-        virtual std::vector<CNODEID> Anonymous_Search(CNODEID p, float r, CCORE cCORE, size_t *time) = 0;
+        virtual std::vector<CNODEID> Retrieve(CNODEID p, float r, CCORE cCORE, size_t *time) = 0;
 
         virtual void Build_Init(const std::string &graph_path,
                                 const std::string &vertex_path,
@@ -773,7 +773,7 @@ void Load_Graph_Topology(const std::string &graph_path,
             return hop_2_dist;
         }
 
-        std::vector<CNODEID> Anonymous_Search(CNODEID p, float r, CCORE cur_coreness, size_t *time) {
+        std::vector<CNODEID> Retrieve(CNODEID p, float r, CCORE cur_coreness, size_t *time) {
             maxHeap<CDIST> neighbor_candi;
 
             CNODEID q = -1;
@@ -1419,12 +1419,10 @@ void Load_Graph_Topology(const std::string &graph_path,
             }
             // Induced Graph
             // Deal adjacency cur_graph_ori_adj
+            std::cout << "Loading datasets...\n";
             std::mutex write_adj_mutex;
 #pragma omp parallel for num_threads(numThreads) schedule(dynamic)
             for (auto i = 0; i < ntotal_; ++i) {
-                if (i % 10000 == 0) {
-                    std::cout << "Set_intersect: " + std::to_string(i) + " \n";
-                }
 //                CNODEID cur_ori_id = cnns_2_ori[i];
                 if (valid_nodes.count(i)) {
                     std::vector<CNODEID> filtered_nei;
@@ -1585,7 +1583,7 @@ void Load_Graph_Topology(const std::string &graph_path,
             } else {
                 throw std::runtime_error("Not Valid Need Add Path!!!!!!\n");
             }
-#pragma omp parallel for schedule(dynamic) num_threads(numThreads)
+//#pragma omp parallel for schedule(dynamic) num_threads(numThreads)
                 for (auto i = 0; i < need_add.size(); ++i) {
                     auto ori_id = need_add[i];
                 Add_Node(ori_id);
@@ -1747,6 +1745,7 @@ void Load_Graph_Topology(const std::string &graph_path,
                 // 退出循环的条件之一
                 if ((-cur.first) > lowerBound)
                     break;
+                neighbor_candi.emplace(expandset.top());
                 expandset.pop();
                 // 进行当前层与cnns大图的节点标号转化
                 int deg_cnt = max_degree;
@@ -1759,10 +1758,7 @@ void Load_Graph_Topology(const std::string &graph_path,
                         auto i = ii.second;
                         if (vis[i]) continue;
                         vis[i] = true;
-
                         auto dist = paper_dist(i);
-                        neighbor_candi.emplace(-dist, i);
-
                         if (resultset.size() < build_queue_length || dist < lowerBound) {
                             expandset.emplace(-dist, i);
                             resultset.emplace(dist, i);

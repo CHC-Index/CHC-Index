@@ -4,7 +4,8 @@
 using namespace chci;
 using namespace std;
 int main(int argc, char** argv){
-    std::cout << "Begin Formal Test, Stage Build Index!\n";
+    std::cout << "Begin Adding Nodes into Index!\n";
+    
 
     int cnt = 1;
     std::string dataset_type = argv[cnt++];
@@ -26,7 +27,9 @@ int main(int argc, char** argv){
     string structure_method = argv[cnt++];
     string metric = argv[cnt++];
 
-
+    std::cout << "Base index: " << index_p << std::endl;
+    std::cout << "New index: " << new_index_path << std::endl;
+    
     Cmodel com_base = core;
     if (cmodel == "truss"){
         com_base = truss;
@@ -68,7 +71,7 @@ int main(int argc, char** argv){
         }
             break;
         case chci::LiveJournal: {
-            CNNSG = make_unique<chci_graph<4,4>>() ;
+            CNNSG = make_unique<chci_graph<128,12>>() ;
         }
             break;
         case chci::Facebook: {

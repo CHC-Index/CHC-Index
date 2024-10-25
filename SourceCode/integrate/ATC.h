@@ -125,13 +125,13 @@ if (core_list[query_CNNSID] < coreness){
                 out << "Runtime : " << time_us << " mcrs";
                 out << std::endl;
 
-                std::cout << "w/oIndex Current query ID: " << std::to_string(i) << " Community Distance = "
-                          << community_dist << " size = " << tmpset.size() << std::endl;
-                std::cout << "Runtime : "
-                          << std::chrono::duration_cast<std::chrono::microseconds>(
-                                  t2 - t1).count() << " mcrs";
-                std::cout << "LocATC Runtime : " << time_us << " mcrs";
-                std::cout << std::endl;
+//                std::cout << "w/oIndex Current query ID: " << std::to_string(i) << " Community Distance = "
+//                          << community_dist << " size = " << tmpset.size() << std::endl;
+//                std::cout << "Runtime : "
+//                          << std::chrono::duration_cast<std::chrono::microseconds>(
+//                                  t2 - t1).count() << " mcrs";
+//                std::cout << "LocATC Runtime : " << time_us << " mcrs";
+//                std::cout << std::endl;
 
                 out_mutex.unlock();
             }

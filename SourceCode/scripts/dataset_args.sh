@@ -17,7 +17,7 @@ DBLP() {
   BUILD_THREAD_NUM=6
   DATASET_TYPE=1
   META_PATH="1,0,1;3,0"
-  SMETHOD=A
+  SMETHOD=opt2
   ATC_BEST=0.40
     VAC_BEST=0.05
     SEA_BEST=0.05
@@ -41,7 +41,7 @@ IMDB_Person(){
   DATASET_TYPE=1
     BUILD_THREAD_NUM=16
   META_PATH="1,0,1;21,9"
-  SMETHOD=A
+  SMETHOD=opt2
    ATC_BEST=0.30
       VAC_BEST=0.20
       SEA_BEST=0.80
@@ -63,7 +63,7 @@ IMDB_Movie(){
   DATASET_TYPE=1
       BUILD_THREAD_NUM=16
   META_PATH="0,1,0,1,0;3,12,0,15"
-  SMETHOD=A
+  SMETHOD=opt2
   ATC_BEST=0.30
     VAC_BEST=0.20
     SEA_BEST=0.30
@@ -86,7 +86,7 @@ Twitch(){
   DATASET_TYPE=0
   BETA=0.80
   META_PATH="0,0;0"
-  SMETHOD=A
+  SMETHOD=opt2
   ATC_BEST=0.60
     VAC_BEST=0.05
     SEA_BEST=0.05
@@ -108,7 +108,7 @@ LiveJournal(){
   DATASET_TYPE=0
          BUILD_THREAD_NUM=16
   META_PATH="0,0;0"
-  SMETHOD=A
+  SMETHOD=opt2
   ATC_BEST=0.10
     VAC_BEST=0.05
     SEA_BEST=0.05
@@ -133,7 +133,7 @@ Facebook(){
   DATASET_TYPE=0
          BUILD_THREAD_NUM=16
   META_PATH="0,0;0"
-  SMETHOD=A
+  SMETHOD=opt2
 }
 FB0(){
   Facebook_root="${root}Facebook/";
@@ -151,7 +151,7 @@ FB0(){
   DATASET_TYPE=0
           BUILD_THREAD_NUM=16
   META_PATH="0,0;0"
-  SMETHOD=A
+  SMETHOD=opt2
 }
 
 

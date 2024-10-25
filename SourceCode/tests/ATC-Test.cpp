@@ -35,8 +35,7 @@ int main(int argc, char **argv) {
   SWITCH_DSTYPE(dataset_type, Facebook);
   SWITCH_DSTYPE(dataset_type, FB0);
 
-  std::cout << "Begin Formal Test, Stage Search ATC!\n";
-  std::cout << "Query Result : " << queryRes << std::endl;
+  std::cout << "Begin ATC Algorithm!\n";
   switch (Dataset_DT) {
   case chci::DBLP: {
     chci::atc<2, 220> ATC;
@@ -100,5 +99,7 @@ int main(int argc, char **argv) {
     break;
   }
   }
+    
+    std::cout << "Result would be stored into: " << ATCqueryRes <<std::endl;
   return 0;
 }

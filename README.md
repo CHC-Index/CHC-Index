@@ -1,13 +1,14 @@
 # 1 Introduction
 
 This is a description of the code used for the experiments described in the paper entitled Cohesiveness-aware Hierarchical Compressed Index for
-Community Search on Attributed Graphs. The full version of this paper is uploaded in this repository.
+Community Search on Attributed Graphs. The **full version** of this paper is uploaded in this repository, however, reading on the website may have display issues, please download it before reading. 
 
 We evaluated our Cohesiveness-aware Hierarchical Compressed Index (CHC-Index)
 by integrate to other methods published recently, e.g., ATC, VAC, SEA, rKACS
 in terms of effectiveness and efficiency for k-core and k-truss models
 on attributed homogeneous graphs and attributed heterogeneous graphs.
 
+NOTE: Due to the temporary inaccessibility of the anonymous repository, we are unable to upload the latest refactored code and README file. We will upload them as soon as the server is restored. In the meantime, our code is temporarily available at https://github.com/CHC-Index/CHC-Index (**with no author information revealed**).
 # 2 Requirements
 The experiments have been run on a Linux server with a 2.1 GHZ, 64 GB memory AMD-6272 Linux server.
 Most of the algorithms are implemented with C++ and compiled by g++-12 except SEA algorithm.
@@ -170,14 +171,14 @@ Most of the specific parameters could be assigned in "datasaet_args.sh".
 
 After the CHC-Index is successfully built, you can retrieve nodes from it.
 ./Retrieve < dataset_name > <index_path > < graph_path > < vertex_path >
-< edge_path > < feat_path > < retrieve_result_path > < query_id > < r > < layer >
+< edge_path > < feat_path > < retrieve_result_path > < query_path > < r > < layer >
 < community_model > <apply_opt2> < metric >
 
 1. dataset_name: The name of the dataset, e.g. Facebook, DBLP, ...
 2. index_path: The path of one built index.
 3. graph_path, vertex_path, edge_path, feat_path: The information of dataset.
 4. retrieve_result_path: Path to store the retrieved nodes.
-5. query_id: The id of the query in the dataset.
+5. query_path: The path of the query file, in the query file, each line is an ID of a vertex.
 6. r: The parameter.
 7. layer: The num of layer that you want to retrieve nodes from.
 8. community_model: core or truss
@@ -189,97 +190,131 @@ After the CHC-Index is successfully built, you can retrieve nodes from it.
 We provide a easier way to run the algorithms by a shell file called
 "run_algo.sh".
 
-./run_algo.sh < dataset_name > < algorithm_name > < operation >
+    ./run_algo.sh < dataset_name > < algorithm_name > < operation >
 
-1. dataset_name: the dataset_name could be found in "config_dataset.sh", like FB0, Facebook, DBLP, Twitch, IMDB_Person, IMDB_Movie, LiveJournal.
-2. algorithm_name: the community search algorithm that you want
-   to integrate, including VAC, SEA, ATC, rKACS.
+1. dataset_name: the dataset_name could be found in "config_dataset.sh", like FB0, Facebook, DBLP, Twitch, IMDB, LiveJournal.
+2. algorithm_name: the integrated community search algorithm , including VAC, SEA, ATC, rKACS.
 3. operation: the operation you want to do, including
 * build: build the whole CHC-Index.
 * retrieve: retrieve some nodes from the built index.
-* VAC, SEA, ATC, rAKCS: Run the corresponding algorithm
+* run: Run the corresponding algorithm
   with the retrieved nodes in "retrieve" step. Specially,
   you could choose whether to run the origin algorithm without
   CHC-Index by set the "run_wo" parameter to 0 or 1 in the "run_algo.sh" file.
 
 
 e.g.: To run VAC algorithm on DBLP with CHC-Index, first build
-the index by executing **./run_algo.sh DBLP VAC build**, then retrieve
-nodes for queries by executing **./run_algo.sh DBLP VAC retrieve**, finally
+the index by executing 
+
+    ./run_algo.sh DBLP VAC build
+
+then retrieve
+nodes for queries by executing 
+
+    ./run_algo.sh DBLP VAC retrieve
+
+finally
 run VAC algorithm with the retrieved nodes by executing
-**./run_algo.sh DBLP VAC VAC**. (If you want, you could run
-**./run_algo.sh DBLP VAC ATC** to run *ATC* algorithm with the nodes
-retrieved in *VAC* metric, but it may cause a bad result :( ).
+
+    ./run_algo.sh DBLP VAC run
+
 
 ## The query result
 
-1. Build: The built index would be output to /exp_data/indices/<dataset_name>
-2. Retrieve: The retrieve result would be output into /exp_data/retrieve/<dataset_name>. For each query,
-   the result contains 2 lines, the first line is query_id, and the following line
-   is composed of the retrieved nodes.
-3. Community algorithms: The result of community search would be stored in /exp_data/<algo_name>/<dataset_name>.
+1. Build: The built index would be output to *./exp_data/indices/<dataset_name>*
+ 
+2. Retrieve: The retrieve result would be output into */exp_data/retrieve/<dataset_name>*. For each query,
+   the result contains 3 lines, the first line is query_id, and the following line
+   is composed of the retrieved nodes, the last line is the time for retrieving.
+3. Community algorithms: The result of community search would be stored in *./exp_data/<algo_name>/<dataset_name>*.
    For each query, the result contains 4 lines: the first line is query_id, the second line is composed
    of the nodes in the community, the third line is the score of the community, and the
-   fourth line is the runtime. Specially, for rKACS algorithm, the id of nodes in the
-   result is reordered, which would not affect the experiment.
+   fourth line is the runtime.
 
-P.S.: The rKACS program requires for snap library, the snap library
-should be built firstly in 3rdPartyLib/snap, otherwise the rKACS algorithm could not
-run successfully.
-
-# 5 Experimrent
+# 6 Experimrent
 ## Section 5.2 & 5.3
 
 First, run
-./run_algo.sh DBLP VAC build
+
+    ./run_algo.sh (DBLP/IMDB/Twitch/LiveJournal/Facebook) (VAC/ATC/SEA/rKACS) build
+
 to build the index.
 
-The experiment could be reproduced by adjusting the parameter r
-and setting *LAYER* to 15.
+Then, run
 
-Then run (take DBLP, VAC as an example):
-./run_algo.sh DBLP VAC retrieve
-./run_algo.sh DBLP VAC VAC
+    ./run_algo.sh (DBLP/IMDB/Twitch/LiveJournal/Facebook) (VAC/ATC/SEA/rKACS) retrieve
+
+to retrieve some vertices from the index.
+
+Finally, run
+
+    ./run_algo.sh (DBLP/IMDB/Twitch/LiveJournal/Facebook) (VAC/ATC/SEA/rKACS) run
+
+to get the final community.
+
+The parameters are preset in *./scripts/dataset_args.cpp*, you could
+change the parameter in the 
 
 ## Section 5.4
 
-By setting the parameter *RPPP* to *0* and *apply_opt2* to *baseline*
+## Section 5.5
+
+By setting the parameter *RPPP* to *0* and *SMETHOD* to *baseline*
+in the script before the index constructing step, we get the
+Index w/o O1+O2 version.
+
+By setting the parameter *RPPP* to *1* and *SMETHOD* to *baseline*
 in the shell script in the index constructing step, we get the
-Index w/o O1+O2 version; By setting the parameter *RPPP* to *1* and *apply_opt2* to *baseline*
-in the shell script in the index constructing step, we get the
-Index w/o O2 version;By setting the parameter *enable_rp++* to *1* and *apply_opt2* to *A*
+Index w/o O2 version.
+
+By setting the parameter *RPPP* to *1* and *SMETHOD* to *opt2*
 in the shell script in the index constructing step, we get the
 Index with all the optimizations;
 
 
-Then run (take DBLP, VAC as an example):
-./run_algo.sh DBLP VAC build
-./run_algo.sh DBLP VAC retrieve
-./run_algo.sh DBLP VAC VAC
+Then run similarly to *5.2* (take DBLP, VAC as an example):
 
-## Section 5.5
+    ./exp5_5.sh DBLP VAC build
+    ./exp5_5.sh DBLP VAC retrieve
+    ./exp5_5.sh DBLP VAC run
+
+
+
+
+## Section 5.6
 
 The index construction and storage overhead could be seen in
 the former index build steps.
 
-## Section 5.6
+## Section 5.7
+
+This experiment is more complicated.
+First, the base index of each graph should be constructed, run
+    ./exp5_7.sh <dataset> <algorithm> PartBuild
+
+## Section 5.8
 
 The case study was running on VAC algorithm. By setting the *dataset* to
 *FB0*, *query_id* to *20*, *LAYER* to *4*, the experiment could be reproduced.
 
 Run:
-./run_algo.sh FB0 VAC build
-./run_algo.sh FB0 VAC retrieve
-./run_algo.sh FB0 VAC VAC
+    ./run_algo.sh FB0 VAC build
+    ./run_algo.sh FB0 VAC retrieve
+    ./run_algo.sh FB0 VAC VAC
 
-## Section 5.7
+## Section 5.9
 
 The experiment could be reproduced by varying the parameter to the given value, allowing for consistent results.
-The parameter *r*, *LAYER*, *BETA* could be changed.
+The parameter sensitivity experiment involves three parameters, 
+i.e. *k*, *r*, and *β*.
 
-Similarly, take DBLP, VAC as an example, after each change of a parameter, run:
-./run_algo.sh DBLP VAC retrieve
-./run_algo.sh DBLP VAC VAC
+You could change *k* by setting *LAYER* ,
+ change *r* by setting *r*, and change *β* by
+setting *BETA* in run_algo.sh. 
 
+Especially, after changing *β*, the index should be 
+reconstructed, as *β* is a parameter set before index construction.
+
+After all the parameters were set, run as *5.2*.
 # Future Work
 More of the code used in the experiment will be released in a few days.
