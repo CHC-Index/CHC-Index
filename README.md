@@ -1,3 +1,5 @@
+NOTE: Due to the temporary inaccessibility of the anonymous repository, we are unable to upload the latest refactored code and README file. We will upload them as soon as the server is restored. In the meantime, our code is temporarily available at https://github.com/CHC-Index/CHC-Index (**with no author information revealed**).
+
 # 1 Introduction
 
 This is a description of the code used for the experiments described in the paper entitled Cohesiveness-aware Hierarchical Compressed Index for
@@ -10,7 +12,6 @@ by integrate to other methods published recently, e.g., ATC, VAC, SEA, rKACS
 in terms of effectiveness and efficiency for k-core and k-truss models
 on attributed homogeneous graphs and attributed heterogeneous graphs.
 
-NOTE: Due to the temporary inaccessibility of the anonymous repository, we are unable to upload the latest refactored code and README file. We will upload them as soon as the server is restored. In the meantime, our code is temporarily available at https://github.com/CHC-Index/CHC-Index (**with no author information revealed**).
 # 2 Requirements
 The experiments have been run on a Linux server with a 2.1 GHZ, 64 GB memory Linux server.
 Most of the algorithms are implemented with C++ and compiled by g++-12 except SEA algorithm.
@@ -291,7 +292,8 @@ the former index build steps.
 ## Section 5.7
 
 This experiment is more complicated.
-First, the base index of each graph should be constructed, run
+First, the base index of each graph should be constructed ($G_1$, run
+
     ./exp5_7.sh <dataset> <algorithm> PartBuild
 
 ## Section 5.8
@@ -300,6 +302,7 @@ The case study was running on VAC algorithm. By setting the *dataset* to
 *FB0*, *query_id* to *20*, *LAYER* to *4*, the experiment could be reproduced.
 
 Run:
+
     ./run_algo.sh FB0 VAC build
     ./run_algo.sh FB0 VAC retrieve
     ./run_algo.sh FB0 VAC VAC
@@ -318,5 +321,4 @@ Especially, after changing *β*, the index should be
 reconstructed, as *β* is a parameter set before index construction.
 
 After all the parameters were set, run as *5.2*.
-# Future Work
-More of the code used in the experiment will be released in a few days.
+
