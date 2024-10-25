@@ -1,1 +1,0 @@
-/usr/bin/c++ -fopenmp  -O3 -DNDEBUG "CMakeFiles/Add_Nodes.dir/test_add_exp/CHCI-Part_Add.cpp.o" -o Add_Nodes 

@@ -1,1 +1,0 @@
-/usr/bin/c++ -fopenmp  -O3 -DNDEBUG "CMakeFiles/Retrieve.dir/tests_arg/CHCI-Retrieve.cpp.o" -o Retrieve 

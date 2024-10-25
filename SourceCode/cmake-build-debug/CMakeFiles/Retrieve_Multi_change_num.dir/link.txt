@@ -1,1 +1,0 @@
-/usr/bin/c++ -fopenmp  -O3 -DNDEBUG "CMakeFiles/Retrieve_Multi_change_num.dir/tests_arg/CHCI-Retrieve-Multi_changeNodeNum.cpp.o" -o Retrieve_Multi_change_num 
