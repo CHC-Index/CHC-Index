@@ -106,6 +106,7 @@ VAC)
   ;;
 ATC)
     check_dir_and_make_if_absent_notquit ${ATC_PREFIX}
+    check_dir_and_make_if_absent_notquit ${root}atc/${DATASET}/WO
 
   ./ATC_test ${DATASET}  ${BASE_INDEX_PATH} ${graph}  ${vertex} ${edge} ${data} ${RETRIEVE_RES_PATH} ${ATC_RES_PATH} ${ATC_RES_PATH_WO}\
               ${LAYER} ${ATC_d} ${ATC_perc} ${ATC_RUN_WITH} ${ATC_RUN_WO} ${DEFAULT_THREAD_NUM}

@@ -1,30 +1,30 @@
 #!/bin/sh
 
 ATC() {
- PERCENTAGE=${ATC_BEST}
+ PERCENTAGE=${ATC_r}
    COMBASE=truss
    METRIC=TEXT
-   r=${ATC_BEST}
+   r=${ATC_r}
    RUN_ALGO="./ATC_test"
 }
 VAC(){
- PERCENTAGE=${VAC_BEST}
+ PERCENTAGE=${VAC_r}
   COMBASE=truss
   METRIC=HYB
-  r=${VAC_BEST}
+  r=${VAC_r}
   RUN_ALGO="./VAC_test"
 }
 rKACS(){
-  PERCENTAGE=${rKACS_BEST}
+  PERCENTAGE=${rKACS_r}
  COMBASE=truss
    METRIC=TEXT
-   r=${rKACS_BEST}
+   r=${rKACS_r}
    RUN_ALGO="./rKACS_Query"
 }
 SEA(){
-  PERCENTAGE=${SEA_BEST}
+  PERCENTAGE=${SEA_r}
  COMBASE=core
  METRIC=HYB
- r=${SEA_BEST}
+ r=${SEA_r}
  RUN_ALGO="jave -jar ./SEA_test.jar"
 }

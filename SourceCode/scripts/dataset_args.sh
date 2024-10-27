@@ -18,10 +18,10 @@ DBLP() {
   DATASET_TYPE=1
   META_PATH="1,0,1;3,0"
   SMETHOD=opt2
-  ATC_BEST=0.40
-    VAC_BEST=0.05
-    SEA_BEST=0.05
-    rKACS_BEST=0.60
+  ATC_r=0.40
+    VAC_r=0.05
+    SEA_r=0.05
+    rKACS_r=0.60
     SEA_DATASET=dblp
     ATC_gamma=0.50
 }
@@ -43,10 +43,12 @@ IMDB(){
     BUILD_THREAD_NUM=16
   META_PATH="1,0,1;21,9"
   SMETHOD=opt2
-   ATC_BEST=0.30
-      VAC_BEST=0.20
-      SEA_BEST=0.80
-      rKACS_BEST=0.70
+   ATC_r=0.30
+      VAC_r=0.20
+      SEA_r=0.80
+      rKACS_r=0.70
+    ATC_gamma=0.60
+
 }
 
 IMDB_Person(){
@@ -65,10 +67,12 @@ IMDB_Person(){
     BUILD_THREAD_NUM=16
   META_PATH="1,0,1;21,9"
   SMETHOD=opt2
-   ATC_BEST=0.30
-      VAC_BEST=0.20
-      SEA_BEST=0.80
-      rKACS_BEST=0.70
+   ATC_r=0.30
+      VAC_r=0.20
+      SEA_r=0.80
+      rKACS_r=0.70
+    ATC_gamma=0.60
+
 }
 
 IMDB_Movie(){
@@ -87,10 +91,12 @@ IMDB_Movie(){
       BUILD_THREAD_NUM=16
   META_PATH="0,1,0,1,0;3,12,0,15"
   SMETHOD=opt2
-  ATC_BEST=0.30
-    VAC_BEST=0.20
-    SEA_BEST=0.30
-    rKACS_BEST=0.50
+  ATC_r=0.30
+    VAC_r=0.20
+    SEA_r=0.30
+    rKACS_r=0.50
+    ATC_gamma=0.40
+
 }
 
 Twitch(){
@@ -110,10 +116,12 @@ Twitch(){
   BETA=0.80
   META_PATH="0,0;0"
   SMETHOD=opt2
-  ATC_BEST=0.60
-    VAC_BEST=0.05
-    SEA_BEST=0.05
-    rKACS_BEST=0.30
+  ATC_r=0.60
+    VAC_r=0.05
+    SEA_r=0.05
+    rKACS_r=0.30
+    ATC_gamma=0.60
+
 }
 
 LiveJournal(){
@@ -132,10 +140,11 @@ LiveJournal(){
          BUILD_THREAD_NUM=16
   META_PATH="0,0;0"
   SMETHOD=opt2
-  ATC_BEST=0.10
-    VAC_BEST=0.05
-    SEA_BEST=0.05
-    rKACS_BEST=0.30
+  ATC_r=0.10
+    VAC_r=0.05
+    SEA_r=0.05
+    rKACS_r=0.30
+    ATC_gamma=0.40
 }
 
 Facebook(){
@@ -144,8 +153,6 @@ Facebook(){
    graph="${Facebook_root}0_edges.txt";
   vertex="null";
    edge="${Facebook_root}0_edges.txt";
-#  edge="${Facebook_root}fb_merge.edges";
-#   edge="${Facebook_root}0_edges.txt";
   data="${Facebook_root}fb_merge.featorigin";
   DATASET=Facebook
          BUILD_L=16
@@ -163,7 +170,6 @@ FB0(){
    graph="null";
    vertex="null";
    edge="${Facebook_root}0_edges.txt";
-#   data="${Facebook_root}0_attributes.txt";
   data="${Facebook_root}fb_merge.featorigin";
   DATASET=FB0
           BUILD_L=16
@@ -172,7 +178,7 @@ FB0(){
   RPPP=1
   BETA=0.80
   DATASET_TYPE=0
-          BUILD_THREAD_NUM=16
+  BUILD_THREAD_NUM=16
   META_PATH="0,0;0"
   SMETHOD=opt2
 }

@@ -57,13 +57,13 @@ VAC_RUN_WO=0
 SEA_PREFIX="${root}sea/${EXP_FOLDER_SUFFIX}/${DATASET}/"
 SEA_RES_PATH_WITH="${SEA_PREFIX}with_r${r}_layer${LAYER}_add${VALID_NODE_PERCENT}.log"
 SEA_RES_PATH_WO="${SEA_PREFIX}wo_r${r}_layer${LAYER}.log"
-SEA_RUN_WO=1
+SEA_RUN_WO=0
 
 ############ ATC ###################
 ATC_d=3
-ATC_perc=0.50
+#ATC_r=0.50
 ATC_RUN_WITH=1
-ATC_RUN_WO=1
+ATC_RUN_WO=0
 
 ATC_PREFIX="${root}atc/${EXP_FOLDER_SUFFIX}/${DATASET}/"
 ATC_RES_PATH="${ATC_PREFIX}with_r${r}_layer${LAYER}_add_${VALID_NODE_PERCENT}.log"
@@ -107,6 +107,7 @@ run)
    ;;
  ATC)
      check_dir_and_make_if_absent_notquit ${ATC_PREFIX}
+    check_dir_and_make_if_absent_notquit ${root}atc/${DATASET}/WO
 
    ./ATC_test ${DATASET}  ${BASE_INDEX_PATH} ${graph}  ${vertex} ${edge} ${data} ${RETRIEVE_RES_PATH} ${ATC_RES_PATH} ${ATC_RES_PATH_WO}\
                ${LAYER} ${ATC_d} ${ATC_perc} ${ATC_RUN_WITH} ${ATC_RUN_WO} ${DEFAULT_THREAD_NUM}

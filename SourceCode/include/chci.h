@@ -862,6 +862,7 @@ void Load_Graph_Topology(const std::string &graph_path,
             auto e = CLOCK;
             *time += TIME_US(s, e);
 
+            // post-processing
             if (resultset.empty())
                 return {};
             std::vector<CNODEID> res;
@@ -871,14 +872,14 @@ void Load_Graph_Topology(const std::string &graph_path,
                     resultset.pop();
                 }
                 while (!resultset.empty()) {
-                    res.emplace_back(cnns_2_ori[resultset.top().second]);
+                    res.emplace_back(resultset.top().second);
                     resultset.pop();
                 }
             } else {
                 while (!resultset.empty()) {
                     CNODEID cur_cnns_id = resultset.top().second;
                     if (valid_nodes.count(cur_cnns_id)){
-                    res.emplace_back(cnns_2_ori[cur_cnns_id]);
+                        res.emplace_back(cur_cnns_id);
                 }
                     resultset.pop();
                 }
@@ -887,7 +888,45 @@ void Load_Graph_Topology(const std::string &graph_path,
                 }
             }
                 std::sort(res.begin(), res.end());
-            return res;
+            std::vector<CNODEID > filted = Filt(res, cur_coreness);
+            if (std::find(filted.begin(), filted.end(),p) != filted.end()){
+                return filted;
+            } else {
+                return res;
+            }
+        }
+        
+        std::vector<CNODEID> Filt(std::vector<CNODEID > &res, CCORE coreness){
+            CNODEID nei_num = coreness;
+            if (communityBase = truss){
+                nei_num = coreness-1;
+            }
+            std::vector<CNODEID> res_filt;
+            auto f = [this,&res, nei_num](CNODEID v){
+                auto begin_iter1 = res.begin();
+                auto end_iter1 = res.end();
+                auto begin_iter2 = cur_graph_ori_adj[v].begin();
+                auto end_iter2 = cur_graph_ori_adj[v].end();
+                int cnt = nei_num;
+                while (begin_iter1 != end_iter1 && begin_iter2 != end_iter2){
+                    if (*begin_iter1 == *begin_iter2){
+                        cnt--;
+                        if (cnt <=0) break;
+                        begin_iter1++;
+                        begin_iter2++;
+                    } else if (*begin_iter1 < *begin_iter2){
+                        begin_iter1++;
+                    } else {
+                        begin_iter2++;
+                    }
+                }
+                if (cnt <= 0) return true;
+                else return false;
+            };
+            for (auto i : res){
+                if (f(i)) res_filt.emplace_back(cnns_2_ori[i]);
+            }
+            return res_filt;
         }
 
         void Robust_Prune_Build(CNODEID id,
