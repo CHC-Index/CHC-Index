@@ -23,7 +23,7 @@ DBLP() {
     SEA_r=0.05
     rKACS_r=0.60
     SEA_DATASET=dblp
-    ATC_gamma=0.50
+    ATC_perc=0.50
 }
 
 
@@ -47,7 +47,7 @@ IMDB(){
       VAC_r=0.20
       SEA_r=0.80
       rKACS_r=0.70
-    ATC_gamma=0.60
+    ATC_perc=0.60
 
 }
 
@@ -71,7 +71,7 @@ IMDB_Person(){
       VAC_r=0.20
       SEA_r=0.80
       rKACS_r=0.70
-    ATC_gamma=0.60
+    ATC_perc=0.60
 
 }
 
@@ -95,7 +95,7 @@ IMDB_Movie(){
     VAC_r=0.20
     SEA_r=0.30
     rKACS_r=0.50
-    ATC_gamma=0.40
+    ATC_perc=0.40
 
 }
 
@@ -120,7 +120,7 @@ Twitch(){
     VAC_r=0.05
     SEA_r=0.05
     rKACS_r=0.30
-    ATC_gamma=0.60
+    ATC_perc=0.60
 
 }
 
@@ -144,7 +144,7 @@ LiveJournal(){
     VAC_r=0.05
     SEA_r=0.05
     rKACS_r=0.30
-    ATC_gamma=0.40
+    ATC_perc=0.40
 }
 
 Facebook(){
