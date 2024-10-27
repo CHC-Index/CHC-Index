@@ -20,7 +20,7 @@ Most of the algorithms are implemented with C++ and compiled by g++-12 except SE
 The jar package is provided by the author of *Scalable Community Search with Accuracy Guarantee on Attributed Graphs*.
 
 # 3 Code Structure
-## 3.1 ./Source/include/
+## 3.1 ./SourceCode/include/
 This folder contains the main code of CHC-Index.
 
 In **basic_define.h**, we defined some types and enums, e.g. **Cmodel** indicates for
@@ -45,16 +45,16 @@ In  **read_adj.h**, we have implemented the functionality of loading the dataset
 
 In **utils.h**, we have implemented some useful funcitons.
 
-## 3.2 ./Source/integrate/
+## 3.2 ./SourceCode/integrate/
 This folder contains some of the algorithms which were integrated.
 
-## 3.3 ./Source/scripts/
+## 3.3 ./SourceCode/scripts/
 This folder contains some scripts required for the experiments.
 
-## 3.4 ./Source/tests/
+## 3.4 ./SourceCode/tests/
 This folder contains some .cpp files required for the experiments.
 
-## 3.5 ./Source/3rdPartyLib/
+## 3.5 ./SourceCode/3rdPartyLib/
 This folder contains two third-party libraries, namely snap and parallel-hashmap.
 Both of the libraries are required for rKACS algorithm. It is recommended to compile the snap library on a Linux system, otherwise errors may occur.
 
