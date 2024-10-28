@@ -2,7 +2,6 @@
 
 NOTE: Due to the temporary inaccessibility of the anonymous repository, we are unable to upload the latest refactored code and README file. We will upload them as soon as the server is restored. In the meantime, our code is temporarily available at https://github.com/CHC-Index/CHC-Index (**with no author information revealed**).
 
-NOTE: Recently we fixed some bugs so that the speedup could be much higher. Please use the latest code. 
 
 # 1 Introduction
 
